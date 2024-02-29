@@ -138,8 +138,6 @@ button {
     margin-right: 5%;
 }
 
-
-/* mobile fiew change */
 @media screen and (max-width: 600px) {
     .navbar-button {
         display: none;
