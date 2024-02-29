@@ -1,0 +1,156 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* navbar */
+.navbar {
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.navbar-logo {
+    width: 100px;
+}
+.navbar-buttons {
+    display: flex;
+    width: 100%;
+}
+.navbar-buttons {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar-button {
+    flex: 1;
+    font-family: 'Electrolize', sans-serif;
+    text-align: center;
+    color: #CB0006;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.navbar-contact {
+    color: rgb(255, 255, 255);
+    background-color: #CB0006;
+    border-radius: 5px;
+}
+
+.navbar-toggle {
+    display: none;
+}
+
+/* Landing page */
+.landing {
+    display: flex;
+    background-color: rgb(223, 223, 223);
+    height: 95vh;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.veb {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+
+    width: 100px;
+    height: 40px;
+    opacity: 0.5;
+}
+
+/* extra info containers */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.image-container {
+    max-width: 50%;
+    flex-shrink: 1;
+    margin: 0 auto;
+}
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+.container {
+    width: 50%;
+    max-width: 1200px;
+    flex-grow: 1;
+}
+.title {
+    font-family: 'Electrolize', sans-serif;
+    color: #ffffff;
+    background-color: #CB0006;
+    margin: 0px;
+    padding: 3px;
+}
+button {
+    font-family: 'Electrolize', sans-serif;
+    color: #ffffff;
+    background-color: #CB0006;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 5px;
+    border: none;
+    cursor: pointer;
+}
+.inverted-order {
+    order: 0;
+}
+
+/* mobile fiew change */
+@media screen and (max-width: 600px) {
+    .navbar-button {
+        display: none;
+    }
+    
+    .navbar-toggle {
+        display: block;
+        cursor: pointer;
+        padding: 10px;
+    }
+    .flex-container {
+        display: flex;
+        width: 90%;
+    }
+    .image-container {
+        max-width: 100%;
+        flex-shrink: 1;
+        margin: 0 auto;
+    }
+    .container {
+        width: 100%;
+        max-width: 1200px;
+        flex-grow: 1;
+    }
+    .inverted-order {
+        order: 1;
+    }
+}
+.slide-track {
+    width: 100%;
+    display: flex;
+    gap: 3em;
+    overflow: hidden;
+}
+  
+.slide img {
+    width: 100px;
+    height: 100px;
+    animation: scroll 60s linear infinite;
+}
+  @keyframes scroll {
+    0% {transform: translateX(0);}
+    100% {transform: translatex(-1000%)}
+  }
