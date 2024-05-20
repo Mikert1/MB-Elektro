@@ -56,13 +56,13 @@ a {
     height: 120vh;
 }
 .landing img:first-child {
-    width: 100%;
+    width: 100vw;
     object-fit: cover;
     object-position: left
 }
 .veb {
     position: absolute;
-    bottom: -5%;
+    bottom: -28%;
     right: 0%;
 
     width: 100px;
@@ -107,6 +107,9 @@ button {
     margin: 0 5px;
     border: none;
     cursor: pointer;
+}
+button a {
+    color: #ffffff;
 }
 .inverted-order {
     order: 0;
@@ -168,6 +171,25 @@ button {
     .inverted-order {
         order: 1;
     }
+    .landing {
+        display: flex;
+        background-color: rgb(223, 223, 223);
+        height: 90vh;
+    }
+    .landing img:first-child {
+        width: 100vw;
+        object-fit: cover;
+        object-position: left
+    }
+    .veb {
+        position: absolute;
+        bottom: 0%;
+        right: 0%;
+    
+        width: 100px;
+        height: 40px;
+        opacity: 0.8;
+    }
 }
 .slide-track {
     width: 100%;
@@ -185,3 +207,31 @@ button {
     0% {transform: translateX(0);}
     100% {transform: translatex(-1000%)}
   }
+
+.contact-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+footer {
+    height: 290px;
+    width: 100%;
+    background-color: #272727;
+    margin: 0;
+    padding: 0;
+}
+.footer {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: space-between;
+    color: #ffffff;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
