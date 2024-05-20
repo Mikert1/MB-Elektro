@@ -47,6 +47,8 @@ a {
 
 .navbar-toggle {
     display: none;
+    background: none;
+    border: none;
 }
 
 /* Landing page */
@@ -145,12 +147,23 @@ button a {
 }
 
 @media screen and (max-width: 600px) {
-    .navbar-button {
+    .navbar-buttons {
         display: none;
     }
-    
+    .navbar-button {
+        display: block;
+        margin: 5px 0;
+    }
+    .navbar-buttons.active {
+        display: flex;
+        margin-top: 70px;
+        width: 100%;
+        text-align: center;
+    }
     .navbar-toggle {
         display: block;
+        position: absolute;
+        right: 5%;
         cursor: pointer;
         padding: 10px;
     }
@@ -190,6 +203,7 @@ button a {
         height: 40px;
         opacity: 0.8;
     }
+    
 }
 .slide-track {
     width: 100%;
@@ -220,6 +234,7 @@ footer {
     background-color: #272727;
     margin: 0;
     padding: 0;
+    margin-top: 20px;
 }
 .footer {
     display: flex;
