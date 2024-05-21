@@ -205,13 +205,14 @@ button a {
     }
     
 }
+
 .slide-track {
     width: 100%;
     display: flex;
     gap: 3em;
     overflow: hidden;
 }
-  
+
 .slide img {
     width: 100px;
     height: 100px;
