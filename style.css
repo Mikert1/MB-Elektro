@@ -2,6 +2,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 0;
 }
 
 /* navbar */
@@ -80,7 +81,7 @@ a {
     margin-right: 5%;
 }
 .image-container {
-    max-width: 50%;
+    max-width: 40rem;
     flex-shrink: 1;
     margin: 0 auto;
 }
@@ -146,6 +147,56 @@ button a {
     margin-right: 5%;
 }
 
+
+.slide-track {
+    width: 100%;
+    display: flex;
+    gap: 3em;
+    overflow: hidden;
+}
+
+.slide img {
+    width: 100px;
+    height: 100px;
+    animation: scroll 60s linear infinite;
+}
+  @keyframes scroll {
+      0% {transform: translateX(0);}
+      100% {transform: translatex(-1000%)}
+  }
+  
+  .contact-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer {
+    height: 290px;
+    width: 100%;
+    background-color: #272727;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+}
+.footer {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: space-between;
+    color: #ffffff;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer a {
+    color: #ffffff;
+    text-decoration: underline;
+}
 @media screen and (max-width: 600px) {
     .navbar-buttons {
         display: none;
@@ -203,51 +254,21 @@ button a {
         height: 40px;
         opacity: 0.8;
     }
-    
-}
-
-.slide-track {
-    width: 100%;
-    display: flex;
-    gap: 3em;
-    overflow: hidden;
-}
-
-.slide img {
-    width: 100px;
-    height: 100px;
-    animation: scroll 60s linear infinite;
-}
-  @keyframes scroll {
-    0% {transform: translateX(0);}
-    100% {transform: translatex(-1000%)}
-  }
-
-.contact-div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-footer {
-    height: 290px;
-    width: 100%;
-    background-color: #272727;
-    margin: 0;
-    padding: 0;
-    margin-top: 20px;
-}
-.footer {
-    display: flex;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-left: 5%;
-    margin-right: 5%;
-    justify-content: space-between;
-    color: #ffffff;
-}
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
+        color: #ffffff;
+    }
+    footer {
+        height: 440px;
+        width: 100%;
+        background-color: #272727;
+        margin: 0;
+        padding: 0;
+        margin-top: 20px;
+    }
 }
