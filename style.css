@@ -188,11 +188,13 @@ footer {
     justify-content: space-between;
     color: #ffffff;
 }
+
 .center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 footer a {
     color: #ffffff;
     text-decoration: underline;
